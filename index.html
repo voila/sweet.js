@@ -371,7 +371,7 @@ macro m {
 m (1, 2, 3, 4)
 </code></pre> -->
 
-<textarea id="editor-7" class="editor">
+<textarea id="editor-6" class="editor">
 macro m {
   case ($x (,) ...) => { 
     [$x (,) ...]
@@ -379,8 +379,8 @@ macro m {
 }
 m (1, 2, 3, 4)
 </textarea>
-<button onclick="sweeten(7);">Try it!</button>
-<pre id="output-7" class="cm-s-sweetprism console"></pre>
+<button onclick="sweeten(6);">Try it!</button>
+<pre id="output-6" class="cm-s-sweetprism console"></pre>
 
 
 
@@ -398,7 +398,7 @@ macro m {
 m (x = 10, y = 2+10)
 </code></pre>
  -->
-<textarea id="editor-8" class="editor">
+<textarea id="editor-7" class="editor">
 macro m {
   case ( $($id:ident = $val:expr) (,) ...) => { 
     $(var $id = $val;) ...
@@ -406,8 +406,8 @@ macro m {
 }
 m (x = 10, y = 2+10)
 </textarea>
-<button onclick="sweeten(8);">Try it!</button>
-<pre id="output-8" class="cm-s-sweetprism console"></pre>
+<button class="sweeten" onclick="sweeten(7);">Try it!</button>
+<pre id="output-7" class="cm-s-sweetprism console"></pre>
 
 
 
@@ -424,7 +424,7 @@ m (1)     // ==> 1
 m (1, 2)  // ==> [1, 2]
 </code></pre> -->
 
-<textarea id="editor-9" class="editor">
+<textarea id="editor-8" class="editor">
 macro m {
   case ($x:lit) => { $x }
   case ($x:lit, $y:lit) => { [$x, $y] }
@@ -433,8 +433,8 @@ macro m {
 m (1);  
 m (1, 2) 
 </textarea>
-<button onclick="sweeten(9);">Try it!</button>
-<pre id="output-9" class="cm-s-sweetprism console"></pre>
+<button onclick="sweeten(8);">Try it!</button>
+<pre id="output-8" class="cm-s-sweetprism console"></pre>
 
 
 </div>

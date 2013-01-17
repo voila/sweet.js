@@ -5,7 +5,6 @@ require(["sweet"], function(sweet) {
     for(var i=0; i < textAreas.length; i++){
       var editor = CodeMirror.fromTextArea(textAreas[i], {
         lineNumbers:true,
-        // matchBrackets: true,
         mode: "javascript"
       });
       editor.setOption("theme", "sweetprism");
@@ -18,10 +17,7 @@ require(["sweet"], function(sweet) {
         console.style.display = "block";
         try {
           var editor = editors[nb];
-          
           var result = sweet.compile(editor.getValue());
-          //console.log(editor.value);
-          //console.log(result);
           CodeMirror.runMode(result, "javascript", console);
         } catch(e) {
           console.innerHTML = e;
